@@ -102,7 +102,7 @@ respectively.
       restore-focus-on-close="[[restoreFocusOnClose]]">
       <!-- support hybrid mode: user might be using paper-menu-button 1.x which distributes via <content> -->
       <div class="dropdown-trigger" slot="dropdown-trigger">
-        <paper-ripple></paper-ripple>
+        <paper-ripple></paper-ripple>         
         <!-- paper-input has type="text" for a11y, do not remove -->
         <paper-input
           type="text"
@@ -116,6 +116,7 @@ respectively.
           no-label-float="[[noLabelFloat]]"
           label="[[label]]">
           <!-- support hybrid mode: user might be using paper-input 1.x which distributes via <content> -->
+          <slot name="prefix" slot="prefix"></slot>
           <iron-icon icon="paper-dropdown-menu:arrow-drop-down" suffix slot="suffix"></iron-icon>
         </paper-input>
       </div>
